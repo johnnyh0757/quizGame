@@ -12,6 +12,7 @@
 		17AFC77420DC25690004A151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AFC77220DC25690004A151 /* Main.storyboard */; };
 		17AFC77620DC256A0004A151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17AFC77520DC256A0004A151 /* Assets.xcassets */; };
 		17AFC77920DC256A0004A151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AFC77720DC256A0004A151 /* LaunchScreen.storyboard */; };
+		7470FA1C20DC37A2003688C5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470FA1B20DC37A2003688C5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		17AFC77520DC256A0004A151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17AFC77820DC256A0004A151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17AFC77A20DC256A0004A151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7470FA1B20DC37A2003688C5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		17AFC76D20DC25690004A151 /* QuizGame */ = {
 			isa = PBXGroup;
 			children = (
+				7470FA1920DC36B2003688C5 /* UI */,
+				7470FA1A20DC36C0003688C5 /* View Controller */,
+				7470FA1820DC369B003688C5 /* Resources */,
+				7470FA1B20DC37A2003688C5 /* Question.swift */,
+			);
+			path = QuizGame;
+			sourceTree = "<group>";
+		};
+		7470FA1820DC369B003688C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				17AFC76E20DC25690004A151 /* AppDelegate.swift */,
-				17AFC77020DC25690004A151 /* ViewController.swift */,
-				17AFC77220DC25690004A151 /* Main.storyboard */,
 				17AFC77520DC256A0004A151 /* Assets.xcassets */,
 				17AFC77720DC256A0004A151 /* LaunchScreen.storyboard */,
 				17AFC77A20DC256A0004A151 /* Info.plist */,
 			);
-			path = QuizGame;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7470FA1920DC36B2003688C5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				17AFC77220DC25690004A151 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7470FA1A20DC36C0003688C5 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17AFC77020DC25690004A151 /* ViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7470FA1C20DC37A2003688C5 /* Question.swift in Sources */,
 				17AFC77120DC25690004A151 /* ViewController.swift in Sources */,
 				17AFC76F20DC25690004A151 /* AppDelegate.swift in Sources */,
 			);
@@ -282,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQAKHP8H6D;
-				INFOPLIST_FILE = QuizGame/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuizGame/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQAKHP8H6D;
-				INFOPLIST_FILE = QuizGame/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/QuizGame/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
