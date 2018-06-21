@@ -59,7 +59,7 @@ class QuestionsController {
     }
     
     // Create the function that will randomize the questions on the buttons
-    static func randomizingQuizAnswers(answers: [String]) {
+    static func randomizingQuizAnswers(answers: Array <String>) {
         
     }
 }
