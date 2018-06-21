@@ -8,19 +8,20 @@
 
 import Foundation
 
+struct TopLevelData {
+    var results: [Question]
+}
 
-class Question {
+struct Question: Codable {
     var category: String
     var difficulty: String
     var correctAnswer: String
     var incorrectAnswer: [String]
     
-    init(category: String, difficulty: String, correctAnswer: String, incorrectAnswer: [String]) {
-        self.category = category
-        self.correctAnswer = correctAnswer
-        self.difficulty = difficulty
-        self.incorrectAnswer = incorrectAnswer
+    enum CodingKeys: CodingKey, String {
+        case category
+        case difficulty
+        case correctAnswer = "correct_answer"
+        case incorrectAnswer = "incorrect_answer"
     }
-    
-    
 }
