@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TopLevelData {
+struct TopLevelData: Codable {
     var results: [Question]
 }
 

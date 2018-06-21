@@ -58,11 +58,11 @@
 		17AFC76D20DC25690004A151 /* QuizGame */ = {
 			isa = PBXGroup;
 			children = (
+				7470FA1D20DC3FAB003688C5 /* Model */,
 				7470FA1E20DC4049003688C5 /* Model Controller */,
 				7470FA1920DC36B2003688C5 /* UI */,
 				7470FA1A20DC36C0003688C5 /* View Controller */,
 				7470FA1820DC369B003688C5 /* Resources */,
-				7470FA1D20DC3FAB003688C5 /* Model */,
 			);
 			path = QuizGame;
 			sourceTree = "<group>";
